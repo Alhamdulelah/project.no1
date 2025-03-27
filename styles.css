@@ -1,0 +1,520 @@
+/* Base Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Mulish", sans-serif;
+    background-color: rgb(242, 242, 242);
+    color: rgb(0, 0, 0);
+    line-height: 1.6;
+}
+
+/* Header Styles */
+#header {
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#headline {
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 40px;
+    margin-top: 20px;
+    color: #333;
+
+}
+#logo, #checkout-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 12vh;
+    width: auto;
+}
+
+.checkout-header {
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.checkout-header h1 {
+    font-size: 36px;
+    margin-top: 40px;
+    color: #333;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.hero-content {
+    max-width: 800px;
+    padding: 20px;
+}
+
+.hero-content p {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-weight: 300;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.explore-btn {
+    background-color: rgb(235, 169, 169);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.explore-btn:hover {
+    background-color: rgba(235, 169, 169, 0.8);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Product Grid Styles */
+.container-for-fragrances {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.fragrance-itself {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.fragrance-itself:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.fragrance-img {
+    height: 250px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+    object-fit: contain;
+}
+
+.fragrance-name {
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+.fragrance-size {
+    color: #666;
+    font-size: 0.9rem;
+    margin: 5px 0;
+}
+
+.fragrance-price {
+    font-weight: 700;
+    color: #333;
+    margin: 10px 0 15px;
+    font-size: 1.2rem;
+}
+
+.buy-button {
+    background-color: rgb(255, 15, 15);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+    width: 200px;
+    font-size: larger;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.buy-button:hover {
+    background-color: rgba(235, 169, 169, 0.8);
+    transform: translateY(-2px);
+}
+
+/* Checkout Page Styles */
+.checkout-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+#checkout-product-display {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+}
+
+#checkout-product-display img {
+    height: 200px;
+    border-radius: 5px;
+    object-fit: contain;
+}
+
+.product-details {
+    flex: 1;
+}
+
+.product-details h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.product-details p {
+    font-size: 18px;
+    margin: 8px 0;
+    color: #555;
+}
+
+.checkout-form {
+    margin-top: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #444;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+    font-family: "Mulish", sans-serif;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    border-color: rgb(235, 169, 169);
+    outline: none;
+}
+
+.form-group textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.form-group select {
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 1em;
+}
+
+.checkout-button {
+    background-color: rgb(255, 4, 4);
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.checkout-button:hover {
+    background-color: rgba(235, 169, 169, 0.8);
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: #555;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.back-link:hover {
+    color: rgb(235, 169, 169);
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 50px 0 20px;
+    margin-top: 60px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    padding: 20px;
+    min-width: 250px;
+}
+
+.footer-section h3 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    position: relative;
+    color: white;
+}
+
+.footer-section h3::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background-color: rgb(235, 169, 169);
+}
+
+.footer-section p {
+    margin: 10px 0;
+    color: #bbb;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: rgb(235, 169, 169);
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+    color: #bbb;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .container-for-fragrances {
+        gap: 30px;
+        padding: 10px;
+    }
+
+    .fragrance-itself {
+        width: 220px;
+        padding: 15px;
+    }
+
+    .fragrance-img {
+        height: 220px;
+    }
+
+    .buy-button {
+        width: 180px;
+        font-size: medium;
+    }
+}
+
+@media (max-width: 768px) {
+    #headline, .checkout-header h1 {
+        font-size: 30px;
+    }
+
+    #picks {
+        font-size: 30px;
+    }
+
+    .hero-content p {
+        font-size: 1.8rem;
+    }
+
+    .fragrance-itself {
+        width: 180px;
+        padding: 10px;
+    }
+
+    .fragrance-img {
+        height: 180px;
+    }
+
+    .buy-button {
+        width: 160px;
+        font-size: small;
+    }
+
+    #checkout-product-display {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    #checkout-product-display img {
+        height: 180px;
+        margin-bottom: 20px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .footer-section h3::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 480px) {
+    #headline, .checkout-header h1 {
+        font-size: 25px;
+    }
+
+    #picks {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+
+    #logo, #checkout-logo {
+        height: 60px;
+    }
+
+    .container-for-fragrances {
+        gap: 20px;
+    }
+
+    .fragrance-itself {
+        width: 150px;
+        padding: 8px;
+    }
+
+    .fragrance-img {
+        height: 150px;
+    }
+
+    .buy-button {
+        width: 140px;
+        height: 35px;
+        font-size: small;
+    }
+
+    .checkout-container {
+        padding: 20px;
+    }
+    
+    #checkout-product-display img {
+        height: 150px;
+    }
+
+    .hero-section {
+        height: 50vh;
+    }
+
+    .hero-content p {
+        font-size: 1.5rem;
+    }
+
+    .explore-btn {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+}
+/* Pure navbar styles - nothing else */
+.navbar {
+    background: #ffffff;
+    padding: 1rem 2rem;
+    box-shadow: #bbb;
+}
+
+.navbar-container {
+  height: 12vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links {
+    position: absolute;
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+right: 5%;
+}
+
+.nav-links a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #c0c0c0;
+}
